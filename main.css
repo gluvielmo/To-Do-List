@@ -1,0 +1,89 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+h2 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #cecdcd;
+}
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+ul {
+    padding-inline-start: 0 !important;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #cecdcd;
+}
+a {
+    color: rgb(0, 85, 182);
+    background-color: #a3cedf;
+    border-radius: 2rem;
+    padding: .25rem 1.4rem;
+    box-shadow: 0 1px 1px rgb(0, 85, 182);
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+a:hover {
+    color: #fff;
+    background-color: #1b85c2;
+}
+input {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #cecdcd;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: all .2s ease-out;
+}
+input:focus {
+    outline: none;
+    border: 3px solid rgb(0, 85, 182);
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem;
+}
+.task {
+    grid-column: 2 / 3;
+}
+.addBtn {
+    display: inline-flex;
+    flex-direction: column;
+}
+.remove {
+    color: #fff;
+    background-color: #df9b92;
+    border-radius: 2rem;
+    padding: .25rem 1.4rem;
+    box-shadow: 0 1px 1px rgb(212, 82, 6);
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+.remove:hover {
+    color: rgb(255, 255, 255);
+    background-color: #d13b15;
+    box-shadow: 0 1px 1px rgb(82, 25, 3);
+}
